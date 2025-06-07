@@ -298,12 +298,12 @@ export default {
       this.resetearFormulario();
     },
     agregarSalarioBase() {
-      const salarioMinimo = 1300000; // Salario mínimo legal vigente 2024
+      // const salarioMinimo = 1300000; // Salario mínimo legal vigente 2024
       if (this.nuevo.salarioBase != null) {
-        if (this.nuevo.salarioBase < salarioMinimo) {
-          alert(`El salario base no puede ser menor al salario mínimo legal vigente ($${salarioMinimo.toLocaleString()})`);
-          return;
-        }
+        // if (this.nuevo.salarioBase < salarioMinimo) {
+        //   alert(`El salario base no puede ser menor al salario mínimo legal vigente ($${salarioMinimo.toLocaleString()})`);
+        //   return;
+        // }
         this.movimientos.push({
           descripcion: 'Salario base',
           monto: this.nuevo.salarioBase,
